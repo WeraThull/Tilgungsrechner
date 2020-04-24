@@ -42,7 +42,7 @@ namespace Calc
             OutputData[] data = new OutputData[Input.Laufzeit];
 
             // Berechnung Jahr 1  --------------------------------------------------------> muss monatlich erfolgen
-            OutputData dataYear1 = new OutputData(); // dies ist ein Test ... oder auch nicht.
+            OutputData dataYear1 = new OutputData(); 
             dataYear1.Kreditbetrag = KreditBetrag;
             dataYear1.Zinsen = KreditBetrag * Zinssatz/100;
             dataYear1.Tilgung = KreditBetrag * startTilgungssatz/100;
