@@ -41,6 +41,7 @@
             this.textBoxZinsatz = new System.Windows.Forms.TextBox();
             this.dateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.colYear = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colMon = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colZins = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colTilgung = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -54,7 +55,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(-144, 2);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 13);
+            this.label1.Size = new System.Drawing.Size(77, 15);
             this.label1.TabIndex = 17;
             this.label1.Text = "Kreditbetrag:";
             // 
@@ -71,7 +72,7 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(528, 19);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(132, 13);
+            this.label4.Size = new System.Drawing.Size(154, 15);
             this.label4.TabIndex = 24;
             this.label4.Text = "Zinsbindungsfrist (Laufzeit)";
             // 
@@ -80,7 +81,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(315, 19);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(130, 13);
+            this.label3.Size = new System.Drawing.Size(150, 15);
             this.label3.TabIndex = 25;
             this.label3.Text = "anfänglicher Tilgungssatz:";
             // 
@@ -89,7 +90,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(183, 19);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(49, 13);
+            this.label2.Size = new System.Drawing.Size(55, 15);
             this.label2.TabIndex = 26;
             this.label2.Text = "Zinssatz:";
             // 
@@ -98,7 +99,7 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(33, 19);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(67, 13);
+            this.label5.Size = new System.Drawing.Size(77, 15);
             this.label5.TabIndex = 27;
             this.label5.Text = "Kreditbetrag:";
             // 
@@ -121,6 +122,7 @@
             this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colYear,
+            this.colMon,
             this.Column1,
             this.colZins,
             this.colTilgung,
@@ -130,6 +132,7 @@
             this.dataGridView.Location = new System.Drawing.Point(15, 97);
             this.dataGridView.Name = "dataGridView";
             this.dataGridView.ReadOnly = true;
+            this.dataGridView.RowHeadersWidth = 51;
             this.dataGridView.Size = new System.Drawing.Size(1047, 360);
             this.dataGridView.TabIndex = 22;
             // 
@@ -169,44 +172,64 @@
             // colYear
             // 
             this.colYear.HeaderText = "Jahr";
+            this.colYear.MinimumWidth = 6;
             this.colYear.Name = "colYear";
             this.colYear.ReadOnly = true;
             this.colYear.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.colYear.Width = 125;
+            // 
+            // colMon
+            // 
+            this.colMon.HeaderText = "Monat";
+            this.colMon.MinimumWidth = 6;
+            this.colMon.Name = "colMon";
+            this.colMon.ReadOnly = true;
+            this.colMon.Width = 125;
             // 
             // Column1
             // 
             this.Column1.HeaderText = "Kreditbetrag";
+            this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
             this.Column1.ReadOnly = true;
             this.Column1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.Column1.Width = 125;
             // 
             // colZins
             // 
             this.colZins.HeaderText = "Zins";
+            this.colZins.MinimumWidth = 6;
             this.colZins.Name = "colZins";
             this.colZins.ReadOnly = true;
             this.colZins.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.colZins.Width = 125;
             // 
             // colTilgung
             // 
             this.colTilgung.HeaderText = "Tilgung";
+            this.colTilgung.MinimumWidth = 6;
             this.colTilgung.Name = "colTilgung";
             this.colTilgung.ReadOnly = true;
             this.colTilgung.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.colTilgung.Width = 125;
             // 
             // Abnnuität
             // 
             this.Abnnuität.HeaderText = "Annuität";
+            this.Abnnuität.MinimumWidth = 6;
             this.Abnnuität.Name = "Abnnuität";
             this.Abnnuität.ReadOnly = true;
             this.Abnnuität.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.Abnnuität.Width = 125;
             // 
             // colRestschuld
             // 
             this.colRestschuld.HeaderText = "Restschuld";
+            this.colRestschuld.MinimumWidth = 6;
             this.colRestschuld.Name = "colRestschuld";
             this.colRestschuld.ReadOnly = true;
             this.colRestschuld.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.colRestschuld.Width = 125;
             // 
             // MyForm
             // 
@@ -249,6 +272,7 @@
         private System.Windows.Forms.TextBox textBoxZinsatz;
         private System.Windows.Forms.DateTimePicker dateTimePicker;
         private System.Windows.Forms.DataGridViewTextBoxColumn colYear;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colMon;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn colZins;
         private System.Windows.Forms.DataGridViewTextBoxColumn colTilgung;

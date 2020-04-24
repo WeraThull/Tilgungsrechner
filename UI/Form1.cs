@@ -7,6 +7,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Calc.Model;
+using Calc.Daten;
+
+/// http://openbook.rheinwerk-verlag.de/visual_csharp_2012/
+/// TODO: 
+/// 1) namespace an Ordnerstruktur anpassen
+/// 2) Annuität -> monatliche Berechnung Jahr 1
+/// 3) Tilgung -> Berechnung
+/// 4) muss OutputData angepasst werden?
+/// Zu Klären:
+/// Wie wählen wir aus, ob Annu oder Tilgung
 
 namespace Calc
 {
