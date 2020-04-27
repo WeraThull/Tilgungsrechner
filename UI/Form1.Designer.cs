@@ -36,10 +36,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.buttonCalc = new System.Windows.Forms.Button();
             this.dataGridView = new System.Windows.Forms.DataGridView();
-            this.textBoxLaufzeit = new System.Windows.Forms.TextBox();
-            this.textBoxTilgungssatz = new System.Windows.Forms.TextBox();
-            this.textBoxZinsatz = new System.Windows.Forms.TextBox();
-            this.dateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.colYear = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colMon = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -47,6 +43,10 @@
             this.colTilgung = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Abnnuität = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colRestschuld = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.textBoxLaufzeit = new System.Windows.Forms.TextBox();
+            this.textBoxTilgungssatz = new System.Windows.Forms.TextBox();
+            this.textBoxZinsatz = new System.Windows.Forms.TextBox();
+            this.dateTimePicker = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -55,7 +55,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(-144, 2);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(77, 15);
+            this.label1.Size = new System.Drawing.Size(67, 13);
             this.label1.TabIndex = 17;
             this.label1.Text = "Kreditbetrag:";
             // 
@@ -72,7 +72,7 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(528, 19);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(154, 15);
+            this.label4.Size = new System.Drawing.Size(132, 13);
             this.label4.TabIndex = 24;
             this.label4.Text = "Zinsbindungsfrist (Laufzeit)";
             // 
@@ -81,7 +81,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(315, 19);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(150, 15);
+            this.label3.Size = new System.Drawing.Size(130, 13);
             this.label3.TabIndex = 25;
             this.label3.Text = "anfänglicher Tilgungssatz:";
             // 
@@ -90,7 +90,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(183, 19);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(55, 15);
+            this.label2.Size = new System.Drawing.Size(49, 13);
             this.label2.TabIndex = 26;
             this.label2.Text = "Zinssatz:";
             // 
@@ -99,7 +99,7 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(33, 19);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(77, 15);
+            this.label5.Size = new System.Drawing.Size(67, 13);
             this.label5.TabIndex = 27;
             this.label5.Text = "Kreditbetrag:";
             // 
@@ -133,41 +133,8 @@
             this.dataGridView.Name = "dataGridView";
             this.dataGridView.ReadOnly = true;
             this.dataGridView.RowHeadersWidth = 51;
-            this.dataGridView.Size = new System.Drawing.Size(1047, 360);
+            this.dataGridView.Size = new System.Drawing.Size(929, 360);
             this.dataGridView.TabIndex = 22;
-            // 
-            // textBoxLaufzeit
-            // 
-            this.textBoxLaufzeit.Location = new System.Drawing.Point(533, 42);
-            this.textBoxLaufzeit.Name = "textBoxLaufzeit";
-            this.textBoxLaufzeit.Size = new System.Drawing.Size(100, 20);
-            this.textBoxLaufzeit.TabIndex = 20;
-            this.textBoxLaufzeit.Text = "10";
-            // 
-            // textBoxTilgungssatz
-            // 
-            this.textBoxTilgungssatz.Location = new System.Drawing.Point(318, 41);
-            this.textBoxTilgungssatz.Name = "textBoxTilgungssatz";
-            this.textBoxTilgungssatz.Size = new System.Drawing.Size(100, 20);
-            this.textBoxTilgungssatz.TabIndex = 21;
-            this.textBoxTilgungssatz.Text = "2";
-            // 
-            // textBoxZinsatz
-            // 
-            this.textBoxZinsatz.Location = new System.Drawing.Point(186, 41);
-            this.textBoxZinsatz.Name = "textBoxZinsatz";
-            this.textBoxZinsatz.Size = new System.Drawing.Size(100, 20);
-            this.textBoxZinsatz.TabIndex = 19;
-            this.textBoxZinsatz.Text = "3";
-            // 
-            // dateTimePicker
-            // 
-            this.dateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker.Location = new System.Drawing.Point(859, 39);
-            this.dateTimePicker.Name = "dateTimePicker";
-            this.dateTimePicker.Size = new System.Drawing.Size(155, 20);
-            this.dateTimePicker.TabIndex = 28;
-            this.dateTimePicker.Value = new System.DateTime(2020, 1, 23, 0, 0, 0, 0);
             // 
             // colYear
             // 
@@ -230,6 +197,39 @@
             this.colRestschuld.ReadOnly = true;
             this.colRestschuld.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             this.colRestschuld.Width = 125;
+            // 
+            // textBoxLaufzeit
+            // 
+            this.textBoxLaufzeit.Location = new System.Drawing.Point(533, 42);
+            this.textBoxLaufzeit.Name = "textBoxLaufzeit";
+            this.textBoxLaufzeit.Size = new System.Drawing.Size(100, 20);
+            this.textBoxLaufzeit.TabIndex = 20;
+            this.textBoxLaufzeit.Text = "10";
+            // 
+            // textBoxTilgungssatz
+            // 
+            this.textBoxTilgungssatz.Location = new System.Drawing.Point(318, 41);
+            this.textBoxTilgungssatz.Name = "textBoxTilgungssatz";
+            this.textBoxTilgungssatz.Size = new System.Drawing.Size(100, 20);
+            this.textBoxTilgungssatz.TabIndex = 21;
+            this.textBoxTilgungssatz.Text = "2";
+            // 
+            // textBoxZinsatz
+            // 
+            this.textBoxZinsatz.Location = new System.Drawing.Point(186, 41);
+            this.textBoxZinsatz.Name = "textBoxZinsatz";
+            this.textBoxZinsatz.Size = new System.Drawing.Size(100, 20);
+            this.textBoxZinsatz.TabIndex = 19;
+            this.textBoxZinsatz.Text = "3";
+            // 
+            // dateTimePicker
+            // 
+            this.dateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker.Location = new System.Drawing.Point(859, 39);
+            this.dateTimePicker.Name = "dateTimePicker";
+            this.dateTimePicker.Size = new System.Drawing.Size(155, 20);
+            this.dateTimePicker.TabIndex = 28;
+            this.dateTimePicker.Value = new System.DateTime(2020, 1, 23, 0, 0, 0, 0);
             // 
             // MyForm
             // 
